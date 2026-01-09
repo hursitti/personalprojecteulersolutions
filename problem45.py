@@ -9,7 +9,7 @@ def calcP(p):
 def calcH(h):
     return h*(2*h-1)
 
-#a modified version of https://en.wikipedia.org/wiki/Square_root_algorithms#Heron's_method to get an real number root if it exists
+#a modified version of https://en.wikipedia.org/wiki/Square_root_algorithms#Heron's_method to get a real number root if it exists
 def intHeron(n):
     n = float(n)
     diff = 1.0
@@ -61,6 +61,7 @@ def findMatchingNumbers(upto):
             H = calcH(hI)
             ret.add((tI, T, pI, P, hI, H))
     return ret
+
 
 
 
