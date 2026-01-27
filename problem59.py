@@ -47,9 +47,9 @@ def buildQuery (wordList, messages):
     return ret
 
 em = getEncryptedMessage("0059_cipher.txt")
-#messages = generatePossibleMessages(em, cycleDecrypt)
-#b = buildQuery (["the"], messages)
-#writeQuery(b, "output2.txt")
+messages = generatePossibleMessages(em, cycleDecrypt)
+b = buildQuery (["the"], messages)
+writeQuery(b, "output2.txt")
 
 
 def compareConcatMethods(a, b, trials, em):
@@ -63,6 +63,7 @@ def compareConcatMethods(a, b, trials, em):
         generatePossibleMessages(em, b)
         bTime += time.time() - tTime
     return (aTime/trials, bTime/trials)
+
 
 
 
