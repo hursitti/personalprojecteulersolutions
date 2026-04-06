@@ -38,7 +38,9 @@ def leafMax (tree, depth):
 maze = createMaze("littletriangle.txt")
 m2 = createMaze("smallertriangle.txt")
 m3 = createMaze("solution.txt")
+m4 = createMaze("0067_triangle.txt")
 
 ret = buildTree(maze, len(maze))
 ret2 = buildTree(m2, len(m2))
 ret3 = buildTree(m3, len(m3))
+r4 = buildTree(m4, len(m4))
